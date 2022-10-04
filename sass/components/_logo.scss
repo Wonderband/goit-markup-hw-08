@@ -1,0 +1,18 @@
+.logo {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    color: getColor('accent');
+    width: 145px;    
+}
+
+.logo>.black {
+    color: getColor('black');
+}
+
+.logo>.white {
+    color: getColor('white');
+}

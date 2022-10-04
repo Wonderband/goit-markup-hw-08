@@ -1,0 +1,10 @@
+.footer-block {
+    background-color: getColor('bg-footer');  
+    padding: 60px 0;
+ }
+
+ .footer-block .container {
+   display: flex;
+   align-items: baseline;    
+ }
+ 

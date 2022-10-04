@@ -1,0 +1,22 @@
+.client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;   
+    color: #AFB1B8;
+    transition: border-color var(--transition-speed), color var(--transition-speed);
+  }
+ 
+  .client-logo:hover, .client-logo:focus {
+    border-color: getColor('accent');
+    color: getColor('accent');
+  }
+  
+  .icon-logo {
+     width: 106px;
+     height: 60px;   
+     fill: currentColor; 
+  }

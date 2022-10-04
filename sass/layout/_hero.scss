@@ -1,0 +1,15 @@
+.hero {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/banner.jpg");
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: getColor('bg-footer');
+    background-size: cover;
+    padding: 200px 0;
+ }
+ 
+ .hero > .container {    
+    text-align: center;
+ }

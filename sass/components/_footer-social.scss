@@ -1,0 +1,20 @@
+.footer-social {
+    margin-right: 93px;     
+   }
+ 
+.footer-social-wrapper {
+    display: flex;
+    gap: 10px;      
+    flex-wrap: nowrap;
+    background-color: getColor('bg-footer');
+}  
+
+.headline-social {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor('white');
+    margin-bottom: 20px;  
+}

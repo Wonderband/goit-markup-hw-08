@@ -1,0 +1,59 @@
+body {
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    color: getColor('text');
+    background-color: getColor('white'); 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .section {
+    padding: 94px 0;
+ }
+ 
+ .container {
+     margin: auto;
+     width: 1200px;   
+     padding: 0 15px;
+ }
+ 
+ .relative-container {
+    position: relative;
+    overflow: hidden;
+  }
+ 
+ .list-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;    
+ }
+
+ .link {
+   text-decoration: none;
+   color: getColor('text');    
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   transition: color var(--transition-speed);
+}
+
+ 
+ .icon-social {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+ }

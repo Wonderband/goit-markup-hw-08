@@ -1,0 +1,40 @@
+.footer-left-block {
+    margin-right: 70px;
+  }
+
+  .address-text {    
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    color: getColor('white');
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 20px;
+    width: 231px;
+ }
+
+ .office {
+    margin: 0;
+ }
+
+ .contacts {
+    margin-top: 9px;
+ }
+
+ .address-text > .list-items {
+    display: block;
+ } 
+
+ .address-text .link {
+    color: getColor('white-opacity');
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03em; 
+    display: inline-block;     
+    
+ }
+  .address-text .link:hover,
+  .address-text .link:focus{
+      color: getColor('accent'); 
+      transition: color var(--transition-speed);     
+  } 

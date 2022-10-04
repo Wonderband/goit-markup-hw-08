@@ -1,0 +1,28 @@
+.top-menu {
+    display: flex;
+    align-items: center;   
+    gap: 93px;
+ }
+
+ .top-menu .link {
+   color: getColor('headline');    
+}
+
+.top-menu .link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 28px;   
+  width: 100%;
+  height: 4px;
+  background-color: getColor('accent');
+}
+
+ .li-relative {
+    position: relative;
+ }
+
+ .head-links .list-items {
+    gap: 50px;
+    margin-left: auto;
+}
