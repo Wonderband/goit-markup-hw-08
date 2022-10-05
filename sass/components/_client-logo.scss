@@ -1,21 +1,36 @@
-.client-logo {
-    display: flex;
+.clients__item { 
+  display: block; 
+  flex-basis: calc((100% - 30px) / 2);
+  max-width: 210px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 226px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }  
+}
+
+.clients__link {
+    display: flex;  
+    height: 92px;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;   
     color: #AFB1B8;
-    transition: border-color var(--transition-speed), color var(--transition-speed);
+    transition: border-color var(--transition-speed), color var(--transition-speed);  
+    
   }
  
-  .client-logo:hover, .client-logo:focus {
+  .clients__link:hover, .clients__link:focus {
     border-color: getColor('accent');
     color: getColor('accent');
   }
   
-  .icon-logo {
+  .clients__logo {
      width: 106px;
      height: 60px;   
      fill: currentColor; 

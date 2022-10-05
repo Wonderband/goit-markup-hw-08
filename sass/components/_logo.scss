@@ -1,12 +1,17 @@
 .logo {
+    @include text-design(700, 24px, 28px, 0.03em);
     text-decoration: none;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
     font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
     color: getColor('accent');
-    width: 145px;    
+
+    @media screen and(min-width: 1200px) {
+        @include text-design(700, 26px, 31px, 0.03em);
+    }
+    // font-size: 26px;
+    // font-weight: 700;
+    // line-height: 1.192;
+    // letter-spacing: 0.03em;    
+    // width: 145px;    
 }
 
 .logo>.black {

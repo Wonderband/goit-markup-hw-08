@@ -1,6 +1,9 @@
-.footer-social {
-    margin-right: 93px;     
-   }
+.footer__social {
+
+    @media screen and(min-width: 1200px){
+        margin-right: 93px;
+    }       
+}
  
 .footer-social-wrapper {
     display: flex;

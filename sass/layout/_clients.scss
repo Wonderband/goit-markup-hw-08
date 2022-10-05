@@ -1,0 +1,20 @@
+ .clients__headline {
+
+   @include text-design(700, 28px, 33px, 0.03em);  
+   text-align: center;
+   color: getColor('headline');  
+   margin-bottom: 30px;
+
+   @media screen and (min-width: 1200px) {
+      @include text-design(700, 36px, 42px, 0.03em);
+      margin-bottom: 50px;  
+   }
+ }
+
+ .clients__list {
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;    
+   justify-content: center;
+   // align-content: space-between;
+}   

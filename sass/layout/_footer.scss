@@ -1,10 +1,26 @@
-.footer-block {
+.footer {
     background-color: getColor('bg-footer');  
     padding: 60px 0;
  }
 
- .footer-block .container {
-   display: flex;
-   align-items: baseline;    
+ .footer__container { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;   
+    align-items: baseline;   
+    column-gap: 165px;  
+  }
+  
+  @media screen and (min-width: 1200px) {
+    gap: 0;
+    text-align: left;
+  }
  }
  

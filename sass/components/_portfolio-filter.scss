@@ -1,7 +1,8 @@
 .list-items .filter {   
-    font-weight: 500;
-    line-height: 1.625;
-    letter-spacing: 0.03em;
+    // font-weight: 500;
+    // line-height: 1.625;
+    // letter-spacing: 0.03em;
+    @include text-design(500, 16px, 26px, 0.03em);
     color: getColor('headline');
     background-color: getColor('bg-grey');
     text-align: center;

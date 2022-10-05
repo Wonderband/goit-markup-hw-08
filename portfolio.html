@@ -17,17 +17,17 @@
     <link href="./css/main.min.css" rel="stylesheet" />   
   </head>
   <body>
-    <header class="head-links">
+    <header class="header">
       <div class="container">
-        <nav class="top-menu">
+        <nav class="header__nav">
           <a class="logo" href="./index.html">Web<span class="black">Studio</span></a>
-          <ul class="list-items">
+          <ul class="list-items header__pages">
             <li><a class="link" href="./index.html">Студія</a></li>
             <li class="li-relative"><a class="link current" href="">Портфоліо</a></li>
             <li><a class="link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list-items">
+        <ul class="list-items header__contacts">
           <li>
             <a class="link contact" href="tel:+380961111111">
               <svg width="10" height="16" class="icon-contact">
@@ -45,6 +45,9 @@
             </a>
           </li>
         </ul>
+        <svg class="header__hmenu">
+          <use href="./images/sprite.svg#hamburger"></use>
+        </svg>
       </div>
     </header>
     <main>
@@ -59,15 +62,19 @@
             <li><button class="filter" type="button">Маркетинг</button></li>
           </ul>
           <ul class="list-items gallery">
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-1_d.jpg 1x, ./images/portfolio/img-1_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-1_t.jpg 1x, ./images/portfolio/img-1_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-1_m.jpg 1x, ./images/portfolio/img-1_m@2x.jpg 2x"/>
                   <img
                     class="images"
-                    src="./images/portfolio/img11.jpg"
-                    alt="Екран ноутбука"
-                    width="370"
+                    src="./images/portfolio/img-1_t.jpg"
+                    alt="Екран ноутбука"                    
                   />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -81,15 +88,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img21.jpg"
-                    alt="Два баскетболісти в момент гри"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-2_d.jpg 1x, ./images/portfolio/img-2_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-2_t.jpg 1x, ./images/portfolio/img-2_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-2_m.jpg 1x, ./images/portfolio/img-2_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-2_t.jpg"
+                      alt="Два баскетболісти в момент гри"                    
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -103,15 +114,20 @@
                 </div>                
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
-                <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img31.jpg"
-                    alt="Логотип рибного ресторану"
-                    width="370"
-                  />
+                <div class="relative-container">                  
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-3_d.jpg 1x, ./images/portfolio/img-3_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-3_t.jpg 1x, ./images/portfolio/img-3_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-3_m.jpg 1x, ./images/portfolio/img-3_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-3_t.jpg"
+                      alt="Логотип рибного ресторану"
+                    
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -125,15 +141,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img41.jpg"
-                    alt="Навушники закритого типу"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-4_d.jpg 1x, ./images/portfolio/img-4_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-4_t.jpg 1x, ./images/portfolio/img-4_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-4_m.jpg 1x, ./images/portfolio/img-4_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-4_t.jpg"
+                      alt="Навушники закритого типу"                      
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -147,15 +167,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img51.jpg"
-                    alt="Дві картонні упаковки"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-5_d.jpg 1x, ./images/portfolio/img-5_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-5_t.jpg 1x, ./images/portfolio/img-5_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-5_m.jpg 1x, ./images/portfolio/img-5_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-5_t.jpg"
+                      alt="Дві картонні упаковки"                    
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -169,15 +193,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img61.jpg"
-                    alt="Монітор комп'ютера"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-6_d.jpg 1x, ./images/portfolio/img-6_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-6_t.jpg 1x, ./images/portfolio/img-6_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-6_m.jpg 1x, ./images/portfolio/img-6_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-6_t.jpg"
+                      alt="Монітор комп'ютера"                    
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -191,15 +219,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img71.jpg"
-                    alt="Розкрита книга"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-7_d.jpg 1x, ./images/portfolio/img-7_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-7_t.jpg 1x, ./images/portfolio/img-7_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-7_m.jpg 1x, ./images/portfolio/img-7_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-7_t.jpg"
+                      alt="Розкрита книга"                     
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -213,15 +245,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img81.jpg"
-                    alt="Бірка з написом LAB EL TAG"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-8_d.jpg 1x, ./images/portfolio/img-8_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-8_t.jpg 1x, ./images/portfolio/img-8_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-8_m.jpg 1x, ./images/portfolio/img-8_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-8_t.jpgg"
+                      alt="Бірка з написом LAB EL TAG"                      
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -235,15 +271,19 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="gallery__item">
               <a class="card-link" href="">
                 <div class="relative-container">
-                  <img
-                    class="images"
-                    src="./images/portfolio/img91.jpg"
-                    alt="Руки на клавіатурі ноутбука"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-9_d.jpg 1x, ./images/portfolio/img-9_d@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/img-9_t.jpg 1x, ./images/portfolio/img-9_t@2x.jpg 2x"/>
+                    <source media="(min-width: 480px)" srcset="./images/portfolio/img-9_m.jpg 1x, ./images/portfolio/img-9_m@2x.jpg 2x"/>
+                    <img
+                      class="images"
+                      src="./images/portfolio/img-9_t.jpg"
+                      alt="Руки на клавіатурі ноутбука"                      
+                    />
+                  </picture>
                   <div class="open-up">
                     <p class="open-up-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -261,9 +301,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer-block">
-      <div class="container">
-        <div class="footer-left-block">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
           <a class="logo" href="./index.html">Web<span class="white">Studio</span></a>
           <address class="address-text">
             <p class="office">м. Київ, пр-т Лесі Українки, 26</p>
@@ -277,7 +317,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
+        <div class="footer__social">
           <p class="headline-social">Приєднуйтесь</p>
           <ul class="socials list-items footer-social-wrapper">
             <li class="socials__item">
@@ -310,12 +350,11 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        <form class="footer__form">
           <p class="headline-social">підпишіться на розсилку</p> 
           <div class="footer-form-wrapper">
-            <Label for="email">
-              <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail"/>
-            </Label>
+            <Label for="email"></Label>
+            <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail"/>            
             <button type="submit" class="big-button big-button--icon">          
               <span class="subscribe">
                 Підписатися

@@ -17,17 +17,17 @@
     <link href="./css/main.min.css" rel="stylesheet" /> 
   </head>
   <body>
-    <header class="head-links">
+    <header class="header">
       <div class="container">
-        <nav class="top-menu">
+        <nav class="header__nav">
           <a class="logo" href="./index.html">Web<span class="black">Studio</span></a>
-          <ul class="list-items">
+          <ul class="list-items header__pages">
             <li class="li-relative"><a class="link current" href="">Студія</a></li>
             <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list-items">
+        <ul class="list-items header__contacts">
           <li>
             <a class="link contact" href="tel:+380961111111">
               <svg width="10" height="16" class="icon-contact">
@@ -45,6 +45,19 @@
             </a>
           </li>
         </ul>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button  class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header__hmenu">
+              <use href="./images/sprite.svg#hamburger"></use>
+            </svg>        
+          </button>
+          <!-- <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+          </ul> -->
+        </div>
       </div>
     </header>
     <main>
@@ -53,7 +66,7 @@
           <h1 class="main-header">Ефективні рішення для вашого бізнесу</h1>
           <button class="big-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
+      </section> 
       <section class="section advantages">
         <div class="container">
           <h2 class="advantages__headline visually-hidden">Наші переваги</h2>
@@ -112,7 +125,8 @@
             <li class="directions__item">
               <img
                 class="directions_img"
-                src="./images/img11.jpg"
+                srcset="./images/directions/img.jpg 1x, ./images/directions/img@2x.jpg 2x"
+                src="./images/directions/img.jpg"
                 alt="Руки програміста на клавіатурі перед монтітором"
               />
               <div class="directions__label">
@@ -122,7 +136,8 @@
             <li class="directions__item">
               <img
                 class="directions_img"
-                src="./images/img21.jpg"
+                srcset="./images/directions/img-1.jpg 1x, ./images/directions/img1@2x.jpg 2x"
+                src="./images/directions/img-1.jpg"
                 alt="Програміст тримає смартфон перед монітором ноутбука"
               />
               <div class="directions__label">
@@ -132,7 +147,8 @@
             <li class="directions__item">
               <img
                 class="directions_img"
-                src="./images/img31.jpg"
+                srcset="./images/directions/img-2.jpg 1x, ./images/directions/img2@2x.jpg 2x"
+                src="./images/directions/img-2.jpg"
                 alt="Руки програміста тримають планшет, на екрані - вибір кольору"
               />
               <div class="directions__label">
@@ -147,7 +163,12 @@
           <h2 class="team__headline">Наша команда</h2>
           <ul class="list-items team__cards">
             <li class="team__card">
-              <img class="team__img" src="./images/team11.jpg" alt="Портрет Ігоря" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/img-1_d.jpg 1x, ./images/portfolio/img-1_d@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/team/img-1_t.jpg 1x, ./images/portfolio/img-1_t@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./images/team/img-1_m.jpg 1x, ./images/team/img-1_m@2x.jpg 2x"/>
+                <img class="team__img" src="./images/team/img-1_m.jpg" alt="Портрет Ігоря" />
+              </picture>
               <div class="team__textbox">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__profession">Product Designer</p>                         
@@ -184,7 +205,12 @@
               </div>          
             </li>
             <li class="team__card">
-              <img class="team__img" src="./images/team21.jpg" alt="Портрет Ольги" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/img-2_d.jpg 1x, ./images/portfolio/img-2_d@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/team/img-2_t.jpg 1x, ./images/portfolio/img-2_t@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./images/team/img-2_m.jpg 1x, ./images/team/img-2_m@2x.jpg 2x"/>
+                <img class="team__img" src="./images/team/img-2_m.jpg" alt="Портрет Ольги"/>
+              </picture>
               <div class="team__textbox">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -221,7 +247,12 @@
               </div>           
             </li>             
             <li class="team__card">
-              <img class="team__img" src="./images/team31.jpg" alt="Портрет Миколи" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/img-3_d.jpg 1x, ./images/portfolio/img-3_d@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/team/img-3_t.jpg 1x, ./images/portfolio/img-3_t@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./images/team/img-3_m.jpg 1x, ./images/team/img-3_m@2x.jpg 2x"/>
+              <img class="team__img" src="./images/team/img-3_m.jpg" alt="Портрет Миколи"/>
+              </picture>
               <div class="team__textbox">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__profession">Marketing</p>              
@@ -258,7 +289,12 @@
               </div>          
             </li>
             <li class="team__card">
-              <img class="team__img" src="./images/team41.jpg" alt="Портрет Михайла" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/img-4_d.jpg 1x, ./images/portfolio/img-4_d@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/team/img-4_t.jpg 1x, ./images/portfolio/img-4_t@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./images/team/img-4_m.jpg 1x, ./images/team/img-4_m@2x.jpg 2x"/>
+                <img class="team__img" src="./images/team/img-4_m.jpg" alt="Портрет Михайла"/>
+              </picture>
               <div class="team__textbox">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__profession">UI Designer</p>              
@@ -299,46 +335,46 @@
       </section>
       <section class="section clients">
         <div class="container">
-          <h2 class="clients__headline">Наші клієнти</h2>
-          <ul class="list-items logos">
-            <li>
-              <a class="client-logo" href="">
-                <svg class="icon-logo">
+          <h2 class="clients__headline">Постійні клієнти</h2>
+          <ul class="list-items clients__list">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__logo">
                   <use href="./images/sprite.svg#Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="client-logo" href="">
-                <svg class="icon-logo">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__logo">
                   <use href="./images/sprite.svg#Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="client-logo" href="">
-                <svg class="icon-logo">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__logo">
                   <use href="./images/sprite.svg#Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="client-logo" href="">
-                <svg class="icon-logo">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__logo">
                   <use href="./images/sprite.svg#Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="client-logo" href="">
-                <svg class="icon-logo">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__logo">
                   <use href="./images/sprite.svg#Logo5"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="client-logo" href="">
-                <svg class="icon-logo">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__logo">
                   <use href="./images/sprite.svg#Logo6"></use>
                 </svg>
               </a>
@@ -347,9 +383,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer-block">
-      <div class="container">
-        <div class="footer-left-block">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
           <a class="logo" href="./index.html">Web<span class="white">Studio</span></a>
           <address class="address-text">
             <p class="office">м. Київ, пр-т Лесі Українки, 26</p>
@@ -363,7 +399,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
+        <div class="footer__social">
           <p class="headline-social">Приєднуйтесь</p>
           <ul class="socials list-items footer-social-wrapper">
             <li class="socials__item">
@@ -396,12 +432,11 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        <form class="footer__form">
           <p class="headline-social">підпишіться на розсилку</p> 
           <div class="footer-form-wrapper">
-            <Label for="email">
-              <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail"/>
-            </Label>
+            <Label for="email"></Label>
+            <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail"/>            
             <button type="submit" class="big-button big-button--icon">          
               <span class="subscribe">
                 Підписатися
@@ -463,6 +498,8 @@
         </form>
       </div>
     </div>
+    
     <script src="./js/modal.js"></script>
+    <script src="./js/toggle-menu.js"></script>
   </body>
 </html>

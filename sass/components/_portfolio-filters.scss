@@ -1,5 +1,16 @@
 .list-items.filters {
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
- }
+    justify-content: start;
+    row-gap: 8px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @media screen and(min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 1200px) {        
+        margin-bottom: 50px;
+    }
+}

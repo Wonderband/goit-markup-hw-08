@@ -1,6 +1,9 @@
-.footer-left-block {
-    margin-right: 70px;
-  }
+.footer__contacts {
+
+   @media screen and(min-width: 1200px){
+      margin-right: 70px;
+   }    
+}
 
   .address-text {    
     font-size: 14px;
@@ -8,7 +11,7 @@
     line-height: 1.5;
     color: getColor('white');
     letter-spacing: 0.03em;
-    text-align: left;
+   //  text-align: left;
     margin-top: 20px;
     width: 231px;
  }
