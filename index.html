@@ -45,19 +45,14 @@
             </a>
           </li>
         </ul>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button  class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="header__hmenu">
-              <use href="./images/sprite.svg#hamburger"></use>
-            </svg>        
-          </button>
-          <!-- <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
-          </ul> -->
-        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">      
+          <svg class="header__hmenu">
+            <use class="icon-menu" href="./images/sprite.svg#hamburger"></use>            
+          </svg>        
+        </button>
       </div>
     </header>
     <main>
@@ -449,6 +444,7 @@
         </form>
       </div>
     </footer>
+    
     <div class="overlay is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
@@ -497,6 +493,30 @@
           <button type="submit" class="big-button big-button--send">Відправити</button>               
         </form>
       </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header__hmenu">
+        <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+
+      <ul class="list-items pages">
+        <li><a href="./index.html" class="link">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+      <ul class="list-items connect">
+        <li><a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>        
+      </ul>
+      <ul class="list-items soc-items">
+        <li class="soc-item"><a href="" class="link">Instagram</a></li>
+        <li class="soc-item"><a href="" class="link">Twitter</a></li>
+        <li class="soc-item"><a href="" class="link">Facebook</a></li>
+        <li class="soc-item"><a href="" class="link">LinkedIn</a></li>
+      </ul>
     </div>
     
     <script src="./js/modal.js"></script>
