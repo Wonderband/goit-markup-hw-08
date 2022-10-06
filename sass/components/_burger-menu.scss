@@ -62,6 +62,10 @@
     color: getColor('black'); 
   }
 
+  .pages .link.current{     
+    color: getColor('accent'); 
+  }
+
   .pages .link:hover{     
     color: getColor('accent'); 
   }
@@ -72,8 +76,12 @@
     // margin-bottom: 64px;
   }
   
-  .connect .link{  
+  .connect .mail{  
     @include text-design(500, 34px, 40px, 0.02em);  
+  }
+
+  .connect .phone{  
+    @include text-design(500, 24px, 28px, 0.02em);  
   }
   
   .soc-items {
